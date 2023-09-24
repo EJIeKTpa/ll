@@ -3,6 +3,7 @@ package ru.kk.task7week._main;
 import ru.kk.task7week.service.Solution;
 
 import java.util.Arrays;
+import java.util.Map;
 
 import static ru.kk.task7week.service.BracketValidation.isValid;
 
@@ -19,6 +20,14 @@ public class _Main {
         for (String testCase : testCases) {
             System.out.println(testCase + ": " + isValid(testCase));
         }
+//3
+        String str = "hello world";
+        Map<Character, Integer> charCount = countCharacters(str);
 
+        for (Map.Entry<Character, Integer> entry : charCount.entrySet()) {
+            char character = entry.getKey();
+            int count = entry.getValue();
+            System.out.println(character + " - " + count);
+        }
     }
 }
