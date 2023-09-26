@@ -3,9 +3,11 @@ package ru.kk.task7week._main;
 import ru.kk.task7week.service.Solution;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 import static ru.kk.task7week.service.BracketValidation.isValid;
 import static ru.kk.task7week.service.CharacterCount.countCharacters;
+import static ru.kk.task7week.service.LinkedListRemover.removeEven;
 
 public class _Main {
     public static void main(String[] args) {
@@ -23,5 +25,9 @@ public class _Main {
 //3
         String str = "hello world";
         countCharacters(str);
+//4
+        LinkedList<Integer> list = new LinkedList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6));
+        removeEven(list);
+        System.out.println(list);
     }
 }
