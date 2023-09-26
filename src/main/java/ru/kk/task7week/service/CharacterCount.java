@@ -1,22 +1,17 @@
 package ru.kk.task7week.service;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CharacterCount {
 
-    public static Map<Character, Integer> countCharacters(String str) {
-        Map<Character, Integer> charCount = new HashMap<>();
-
+    public static void countCharacters(String str) {
+        Map<Character, Integer> charCounts = new LinkedHashMap<>();
         for (char c : str.toCharArray()) {
-            if (charCount.containsKey(c)) {
-                int count = charCount.get(c);
-                charCount.put(c, count + 1);
-            } else {
-                charCount.put(c, 1);
-            }
+            charCounts.put(c, charCounts.getOrDefault(c, 0) + 1);
         }
-
-        return charCount;
+        for (char c : charCounts.keySet()) {
+            System.out.println(c + " - " + charCounts.get(c));
+        }
     }
 }
