@@ -1,13 +1,13 @@
-package ru.kk.task7week._main;
+package ru.kk.ll._main;
 
-import ru.kk.task7week.service.Solution;
+import ru.kk.ll.service.Solution;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 
-import static ru.kk.task7week.service.BracketValidation.isValid;
-import static ru.kk.task7week.service.CharacterCount.countCharacters;
-import static ru.kk.task7week.service.LinkedListRemover.removeEven;
+import static ru.kk.ll.service.BracketValidation.isValid;
+import static ru.kk.ll.service.CharacterCount.countCharacters;
+import static ru.kk.ll.service.LinkedListRemover.removeEven;
 
 public class _Main {
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class _Main {
         String str = "hello world";
         countCharacters(str);
 //4
-        LinkedList<Integer> list = new LinkedList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6));
+        LinkedList<Integer> list = new LinkedList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
         removeEven(list);
         System.out.println(list);
     }

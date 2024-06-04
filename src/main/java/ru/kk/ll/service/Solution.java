@@ -1,4 +1,4 @@
-package ru.kk.task7week.service;
+package ru.kk.ll.service;
 
 public class Solution {
     public int[] removeDuplicates(int[] nums) {
